@@ -1,6 +1,5 @@
 /* <><><><><><> General Styling <><><><><><> */
 
-
 body {
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
@@ -13,11 +12,9 @@ body {
 
 a:link {
     text-decoration: none;
-    color: black;
 }
 a:visited {
     text-decoration: none;
-    color: black;
 }
 a:hover{
     color: skyblue;
@@ -28,6 +25,9 @@ ul {
     padding: 0;
     margin: 0;
 }
+
+* {border: 2px solid red;}
+
 
 /* <><><><><><> End of General Styling <><><><><><> */
 
@@ -55,21 +55,22 @@ Makes 2 big boxes in the header using flexbox:
 header {
     display: flex;
     flex-direction: column;
-    border: 2px solid red;
     background-color: #1F2937;
 }
 
 nav {
-    border: 2px solid red;
     display: flex;
     font-size: 18px;
     color: #E5E7EB;
     justify-content: space-around;
+    flex-grow: 1;
 }
+
 .logo {
     font-size: 24px;
     color: #F9FAF8;
 }
+
 ul {
     display: flex;
     gap: 16px;
@@ -79,24 +80,46 @@ ul {
 }
 
 .rest-of-header {
-    border: 2px solid red;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .title-and-info {
-    border: 2px solid red;
     display: flex;
     flex-direction: column;
-
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: #E5E7EB;
 }
+
 .page-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 48px;
     color: #F9FAF8;
     font-weight: 1000;
 }
+
+.sign-up {
+    background-color: #3882F6;
+    flex-grow: 1;
+}
+
+.title-and-info .sign-up a{
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+.title-and-info .sign-up a:hover{
+    color: skyblue;
+}
+
 .rest-of-header img {
     min-width: 300px;
+    flex: auto;
 }
 
 
