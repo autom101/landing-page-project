@@ -1,3 +1,6 @@
+/* <><><><><><> General Styling <><><><><><> */
+
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
@@ -8,30 +11,13 @@ body {
     /* overflow: hidden; */
 }
 
-* {border: 2px solid red;}
-
-header {
-    display: flex;
-    flex-direction: column;
-}
-
-main {
-    display: flex;
-    flex-direction: column;
-}
-
-footer {
-    display: flex;
-    flex-direction: column;
-}
-
-/* remove lines from links */
-
 a:link {
     text-decoration: none;
+    color: black;
 }
 a:visited {
     text-decoration: none;
+    color: black;
 }
 a:hover{
     color: skyblue;
@@ -42,3 +28,92 @@ ul {
     padding: 0;
     margin: 0;
 }
+
+/* <><><><><><> End of General Styling <><><><><><> */
+
+
+
+
+
+/* <><><><><><> Start of Styling for Header <><><><><><> */
+
+
+
+/* 
+Makes 2 big boxes in the header using flexbox: 
+1. nav (for logo and links at top)
+    - Has 2 small boxes inside itself
+        i) logo (for the div containing the logo)
+        ii) header-links (for the unordered list with extra links)
+
+2. rest-of-header (the rest of the header that isn't nav) 
+    - Has 2 smaller boxes inside itself
+        i) title-and-info (has the div containing the title, the div containing a small blurb, and the div containing a sign up link)
+        ii) video (has 
+*/
+
+header {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid red;
+}
+
+nav {
+    border: 2px solid red;
+    display: flex;
+    justify-content: space-around;
+}
+ul {
+    display: flex;
+    gap: 16px;
+}
+
+.rest-of-header {
+    border: 2px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title-and-info {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/* <><><><><><> End of Styling for Header <><><><><><> */
+
+
+
+
+
+/* <><><><><><> Start of Styling for Main <><><><><><> */
+
+
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/* <><><><><><> End of Styling for Main <><><><><><> */
+
+
+
+
+
+/* <><><><><><> Start of Styling for Footer <><><><><><> */
+
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/* <><><><><><> End of Styling for Footer <><><><><><> */
+
