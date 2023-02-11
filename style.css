@@ -49,7 +49,7 @@ Makes 2 big boxes in the header using flexbox:
 2. rest-of-header (the rest of the header that isn't nav) 
     - Has 2 smaller boxes inside itself
         i) title-and-info (has the div containing the title, the div containing a small blurb, and the div containing a sign up link)
-        ii) video (has 
+        ii) img (has a parachute img video on it)
 */
 
 header {
