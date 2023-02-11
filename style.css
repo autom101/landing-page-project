@@ -5,19 +5,24 @@ body {
     margin: 0;
     padding: 0;
     min-height: 100vh;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
-header {
+* {border: 2px solid red;}
 
+header {
+    display: flex;
+    flex-direction: column;
 }
 
 main {
-
+    display: flex;
+    flex-direction: column;
 }
 
 footer {
-
+    display: flex;
+    flex-direction: column;
 }
 
 /* remove lines from links */
