@@ -13,9 +13,11 @@ body {
 a:link {
     text-decoration: none;
 }
+
 a:visited {
     text-decoration: none;
 }
+
 a:hover{
     color: skyblue;
 }
@@ -27,7 +29,6 @@ ul {
 }
 
 * {border: 2px solid red;}
-
 
 /* <><><><><><> End of General Styling <><><><><><> */
 
@@ -56,14 +57,15 @@ header {
     display: flex;
     flex-direction: column;
     background-color: #1F2937;
+    flex-grow: 1;
 }
 
 nav {
     display: flex;
     font-size: 18px;
     color: #E5E7EB;
-    justify-content: space-around;
     flex-grow: 1;
+    padding: 0 32px;
 }
 
 .logo {
@@ -77,12 +79,18 @@ ul {
     align-self: center;
     color: #E5E7EB;
     font-size: 18px;
+    margin-left: auto;
+}
+
+ul a{
+    color: #E5E7EB;
 }
 
 .rest-of-header {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 32px;
 }
 
 .title-and-info {
@@ -92,6 +100,8 @@ ul {
     justify-content: center;
     font-size: 18px;
     color: #E5E7EB;
+    width: 300px;
+    height: 150px;
 }
 
 .page-title {
@@ -118,8 +128,10 @@ ul {
 }
 
 .rest-of-header img {
-    min-width: 300px;
-    flex: auto;
+    min-width: 150px;
+    height: 150px;
+    width: 300px;
+    flex-grow: auto;
 }
 
 
@@ -137,6 +149,25 @@ ul {
 main {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.illustrations {
+    display: flex;
+    gap: 16px;
+}
+
+.section-title {
+    font-size: 36px;
+    font-weight: 1000;
+    color: #1F2937;
+}
+
+.testimonial {
+    display: flex;
+    background-color: #E5E7EB;
+    flex-grow: 1;
 }
 
 
@@ -154,6 +185,10 @@ main {
 footer {
     display: flex;
     flex-direction: column;
+    background-color: #1F2937;
+    color: #F9FAF8;
+    justify-content: center;
+    align-items: center;
 }
 
 
