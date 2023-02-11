@@ -56,16 +56,26 @@ header {
     display: flex;
     flex-direction: column;
     border: 2px solid red;
+    background-color: #1F2937;
 }
 
 nav {
     border: 2px solid red;
     display: flex;
+    font-size: 18px;
+    color: #E5E7EB;
     justify-content: space-around;
+}
+.logo {
+    font-size: 24px;
+    color: #F9FAF8;
 }
 ul {
     display: flex;
     gap: 16px;
+    align-self: center;
+    color: #E5E7EB;
+    font-size: 18px;
 }
 
 .rest-of-header {
@@ -75,8 +85,18 @@ ul {
     align-items: center;
 }
 .title-and-info {
+    border: 2px solid red;
     display: flex;
     flex-direction: column;
+
+}
+.page-title {
+    font-size: 48px;
+    color: #F9FAF8;
+    font-weight: 1000;
+}
+.rest-of-header img {
+    min-width: 300px;
 }
 
 
