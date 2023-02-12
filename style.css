@@ -9,10 +9,6 @@ body {
     /* overflow: hidden; */
 }
 
-a {
-    color: aqua;
-}
-
 a:link {
     text-decoration: none;
 }
@@ -22,7 +18,7 @@ a:visited {
 }
 
 a:hover{
-    color: skyblue;
+    color: aqua;
 }
 
 ul {
@@ -127,12 +123,12 @@ ul {
 }
 
 .title-and-info .sign-up a{
-    font-size: 18px;
-    color: #E5E7EB;
+    font-size: 16px;
+    color: white;
 }
 
 .title-and-info .sign-up a:hover{
-    color: skyblue;
+    color: aqua;
 }
 
 .rest-of-header img {
@@ -225,23 +221,53 @@ ul {
     border-style: none;
     border-radius: 5px;
     border-color: white;
+    display: flex;
     flex: auto;
+    justify-content: space-around;
+    align-items: center;
     margin-bottom: 10px;
 }
 
-.bottom-sign-up {
-    flex: auto;
+.sign-up-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;;
+    text-align: center;
+}
+
+.sign-up-text-title {
+    font-weight: bold;
+    color: white;
+    font-size: 24px;
+    align-self: start;
+}
+
+.sign-up-text-body {
+    color: white;
+    font-weight: 300;
+    font-size: 16px;
+    align-self: start;
 }
 
 .sign-up {
     display: flex;
     justify-content: center;
+    align-items: center;
     height: 25px;
-    border-style: groove;
+    border-style: solid;
     border-radius: 5px;
-    border: 10px;
+    border-width: 1px;
     border-color: white;
-    flex: auto;
+    flex-basis: auto;
+    text-align: center;
+}
+
+.sign-up .bottom-sign-up {
+    color: white;
+}
+
+.bottom-sign-up:hover {
+    color: aqua;
 }
 
 
