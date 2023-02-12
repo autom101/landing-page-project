@@ -61,7 +61,7 @@ header {
     padding: 8px 52px 0 52px;
     height: 245px;
     flex: auto;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 nav {
@@ -81,7 +81,6 @@ nav {
 ul {
     display: flex;
     gap: 16px;
-    align-self: start;
     color: #E5E7EB;
     font-size: 18px;
     margin-left: auto;
@@ -89,24 +88,20 @@ ul {
 
 .rest-of-header {
     display: flex;
-    width: 1040px;
     flex: auto;
 }
 
 .title-and-info {
     display: flex;
     flex-direction: column;
-    align-items: center;
     font-size: 18px;
     color: #E5E7EB;
-    width: 450px;
+    height: 160px;
     flex: auto;
 }
 
 .page-title {
     display: flex;
-    justify-content: center;
-    align-items: center;
     font-size: 48px;
     color: #F9FAF8;
     font-weight: 1000;
@@ -124,7 +119,7 @@ ul {
     background-color: #3882F6;
     width: 100px;
     height: 50px;
-    flex-grow: 1;
+    text-align: center;
 }
 
 .title-and-info .sign-up a{
@@ -138,7 +133,7 @@ ul {
 
 .rest-of-header img {
     height: 160px;
-    width: 240px;
+    width: auto;
     flex: auto;
 }
 
@@ -200,6 +195,7 @@ ul {
     flex: auto;
     height: 65px;
     justify-content: center;
+    align-content: center;
 }
 
 .bottom-sign-up-box {
