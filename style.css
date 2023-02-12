@@ -86,6 +86,10 @@ ul {
     margin-left: auto;
 }
 
+.link {
+    color: #E5E7EB;
+}
+
 .rest-of-header {
     display: flex;
     flex: auto;
@@ -152,6 +156,7 @@ ul {
     flex-direction: column;
     flex: auto;
     height: 331px;
+    gap: 10px;
 }
 
 .section-title {
@@ -165,7 +170,7 @@ ul {
 
 .illustrations {
     display: flex;
-    gap: 16px;
+    gap: 40px;
     justify-content: center;
     height: 100px;
     flex: auto;
@@ -175,10 +180,11 @@ ul {
 .picture {
     display: flex;
     flex-direction: column;
-    flex: auto;
+    flex: 0 1 auto;
     justify-content: center;
     align-items: center;
-    width: 40px;
+    width: 100px;
+    height: auto;
     border-style: solid;
     border-radius: 15%;
     border-color: #3882F6;
@@ -205,10 +211,22 @@ ul {
 .bottom-sign-up-box {
     display: flex;
     height: 100px;
+    width: 1000px;
     flex: auto;
+    padding: 0 52px;
     justify-content: center;
     align-items: center;
 
+}
+
+.blue-area-in-middle {
+    height: 80px;
+    background-color: #3882F6;
+    border-style: none;
+    border-radius: 5px;
+    border-color: white;
+    flex: auto;
+    margin-bottom: 10px;
 }
 
 .bottom-sign-up {
