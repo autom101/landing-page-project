@@ -34,7 +34,7 @@ ul {
 /* <><><><><><> End of General Styling <><><><><><> */
 
 
-* {border: 1px solid red;}
+
 
 
 /* <><><><><><> Start of Styling for Header <><><><><><> */
@@ -58,20 +58,24 @@ header {
     display: flex;
     flex-direction: column;
     background-color: #1F2937;
-    padding-top: 8px;
+    padding: 8px 52px 0 52px;
+    height: 245px;
+    flex: auto;
+    justify-content: space-between;
 }
 
 nav {
     display: flex;
     font-size: 18px;
     color: #E5E7EB;
-    padding: 0 32px;
+    flex: auto;
 }
 
 .logo {
     font-size: 24px;
     color: #F9FAF8;
     height: 30px;
+    font-weight: bold;
 }
 
 ul {
@@ -85,11 +89,8 @@ ul {
 
 .rest-of-header {
     display: flex;
-    align-items: center;
-    align-self: center;
-    gap: 185px;
     width: 1040px;
-    flex: 1 1 auto;
+    flex: auto;
 }
 
 .title-and-info {
@@ -98,6 +99,8 @@ ul {
     align-items: center;
     font-size: 18px;
     color: #E5E7EB;
+    width: 450px;
+    flex: auto;
 }
 
 .page-title {
@@ -112,7 +115,7 @@ ul {
 
 .header-text {
     display: flex;
-    width: 300px;
+    width: 450px;
     flex-wrap: wrap;
     flex: auto;
 }
@@ -134,9 +137,9 @@ ul {
 }
 
 .rest-of-header img {
-    height: 200px;
-    width: 300px;
-    margin-left: auto;
+    height: 160px;
+    width: 240px;
+    flex: auto;
 }
 
 
@@ -152,7 +155,8 @@ ul {
 .middle {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    flex: auto;
+    height: 331px;
 }
 
 .section-title {
@@ -161,6 +165,7 @@ ul {
     color: #1F2937;
     align-self: center;
     margin-top: 12px;
+    flex: auto;
 }
 
 .illustrations {
@@ -168,42 +173,46 @@ ul {
     gap: 16px;
     justify-content: center;
     height: 100px;
+    flex: auto;
 }
 
 .picture {
     display: flex;
     flex-direction: column;
+    flex: auto;
+    justify-content: center;
+    align-items: center;
+    border-color: red;
+    border-width: 4px;
 }
 
 .picture div {
     height: 90px;
     width: 90px;
-    border-color: #3882F6;
-    border-radius: 7px;
-    border-width: 1px;
     align-items: center;
     flex-grow: 1;
+    text-align: center;
 }
 
 .testimonial {
     display: flex;
     background-color: #E5E7EB;
-    flex-grow: 1;
-    height: 100px;
+    flex: auto;
+    height: 65px;
     justify-content: center;
 }
 
 .bottom-sign-up-box {
     display: flex;
     height: 100px;
-    flex-grow: 1;
+    flex: auto;
     justify-content: center;
     align-items: center;
 
 }
 
 .bottom-sign-up {
-    flex-grow: 1;
+    flex: auto;
 }
 
 .sign-up {
@@ -214,7 +223,7 @@ ul {
     border-radius: 5px;
     border: 1px;
     border-color: white;
-    flex-grow: 1;
+    flex: auto;
 }
 
 
