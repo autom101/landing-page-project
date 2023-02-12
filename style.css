@@ -6,8 +6,11 @@ body {
     flex-direction: column;
     margin: 0;
     padding: 0;
-    min-height: 100vh;
     /* overflow: hidden; */
+}
+
+a {
+    color: aqua;
 }
 
 a:link {
@@ -28,12 +31,10 @@ ul {
     margin: 0;
 }
 
-* {border: 2px solid red;}
-
 /* <><><><><><> End of General Styling <><><><><><> */
 
 
-
+* {border: 1px solid red;}
 
 
 /* <><><><><><> Start of Styling for Header <><><><><><> */
@@ -57,14 +58,13 @@ header {
     display: flex;
     flex-direction: column;
     background-color: #1F2937;
-    flex-grow: 1;
+    padding-top: 8px;
 }
 
 nav {
     display: flex;
     font-size: 18px;
     color: #E5E7EB;
-    flex-grow: 1;
     padding: 0 32px;
 }
 
@@ -83,26 +83,21 @@ ul {
     margin-left: auto;
 }
 
-ul a{
-    color: #E5E7EB;
-}
-
 .rest-of-header {
     display: flex;
-    justify-content: center;
     align-items: center;
-    padding: 32px;
+    align-self: center;
+    gap: 185px;
+    width: 1040px;
+    flex: 1 1 auto;
 }
 
 .title-and-info {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     font-size: 18px;
     color: #E5E7EB;
-    width: 300px;
-    height: 150px;
 }
 
 .page-title {
@@ -112,10 +107,20 @@ ul a{
     font-size: 48px;
     color: #F9FAF8;
     font-weight: 1000;
+    width: 450px;
+}
+
+.header-text {
+    display: flex;
+    width: 300px;
+    flex-wrap: wrap;
+    flex: auto;
 }
 
 .sign-up {
     background-color: #3882F6;
+    width: 100px;
+    height: 50px;
     flex-grow: 1;
 }
 
@@ -129,10 +134,9 @@ ul a{
 }
 
 .rest-of-header img {
-    min-width: 150px;
-    height: 150px;
+    height: 200px;
     width: 300px;
-    flex-grow: auto;
+    margin-left: auto;
 }
 
 
@@ -145,29 +149,71 @@ ul a{
 
 /* <><><><><><> Start of Styling for Main <><><><><><> */
 
-
-
-main {
+.middle {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    gap: 12px;
 }
 
 .section-title {
     font-size: 36px;
-    font-weight: 1000;
+    font-weight: 800;
     color: #1F2937;
+    align-self: center;
+    margin-top: 12px;
 }
 
 .illustrations {
     display: flex;
     gap: 16px;
+    justify-content: center;
+    height: 100px;
+}
+
+.picture {
+    display: flex;
+    flex-direction: column;
+}
+
+.picture div {
+    height: 90px;
+    width: 90px;
+    border-color: #3882F6;
+    border-radius: 7px;
+    border-width: 1px;
+    align-items: center;
+    flex-grow: 1;
 }
 
 .testimonial {
     display: flex;
     background-color: #E5E7EB;
+    flex-grow: 1;
+    height: 100px;
+    justify-content: center;
+}
+
+.bottom-sign-up-box {
+    display: flex;
+    height: 100px;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.bottom-sign-up {
+    flex-grow: 1;
+}
+
+.sign-up {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    height: 20px;
+    border-radius: 5px;
+    border: 1px;
+    border-color: white;
     flex-grow: 1;
 }
 
@@ -188,8 +234,11 @@ footer {
     flex-direction: column;
     background-color: #1F2937;
     color: #F9FAF8;
+    flex: auto;
     justify-content: center;
     align-items: center;
+    margin-top: auto;
+    height: 50px;
 }
 
 
