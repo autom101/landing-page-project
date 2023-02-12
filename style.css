@@ -1,4 +1,43 @@
-/* <><><><><><> General Styling <><><><><><> */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    gap: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
 
 body {
     font-family: Arial, Helvetica, sans-serif;
@@ -6,7 +45,9 @@ body {
     flex-direction: column;
     margin: 0;
     padding: 0;
-    /* overflow: hidden; */
+    height: 100%;
+    width: 100%;
+    /* overflow: hidden; 
 }
 
 a:link {
@@ -27,36 +68,20 @@ ul {
     margin: 0;
 }
 
-/* <><><><><><> End of General Styling <><><><><><> */
+ <><><><><><> End of General Styling <><><><><><> 
 
 
 
 
 
-/* <><><><><><> Start of Styling for Header <><><><><><> */
-
-
-
-/* 
-Makes 2 big boxes in the header using flexbox: 
-1. nav (for logo and links at top)
-    - Has 2 small boxes inside itself
-        i) logo (for the div containing the logo)
-        ii) header-links (for the unordered list with extra links)
-
-2. rest-of-header (the rest of the header that isn't nav) 
-    - Has 2 smaller boxes inside itself
-        i) title-and-info (has the div containing the title, the div containing a small blurb, and the div containing a sign up link)
-        ii) img (has a parachute img video on it)
-*/
+ <><><><><><> Start of Styling for Header <><><><><><> 
 
 header {
     display: flex;
     flex-direction: column;
     background-color: #1F2937;
     padding: 8px 52px 0 52px;
-    height: 245px;
-    flex: auto;
+    flex: 1 1 25%;
     justify-content: center;
 }
 
@@ -119,7 +144,9 @@ ul {
     background-color: #3882F6;
     width: 100px;
     height: 50px;
+    min-width: 0;
     text-align: center;
+    flex-shrink: 0;
 }
 
 .title-and-info .sign-up a{
@@ -134,24 +161,23 @@ ul {
 .rest-of-header img {
     height: 160px;
     width: auto;
-    flex: auto;
+    flex-shrink: 0;
 }
 
 
 
-/* <><><><><><> End of Styling for Header <><><><><><> */
+ <><><><><><> End of Styling for Header <><><><><><> 
 
 
 
 
 
-/* <><><><><><> Start of Styling for Main <><><><><><> */
+ <><><><><><> Start of Styling for Main <><><><><><> 
 
 .middle {
     display: flex;
     flex-direction: column;
-    flex: auto;
-    height: 331px;
+    flex: 1 1 70%;
     gap: 10px;
 }
 
@@ -168,7 +194,6 @@ ul {
     display: flex;
     gap: 40px;
     justify-content: center;
-    height: 100px;
     flex: auto;
     padding: 0 52px;
 }
@@ -176,11 +201,11 @@ ul {
 .picture {
     display: flex;
     flex-direction: column;
-    flex: 0 1 auto;
+    flex: 1;
     justify-content: center;
     align-items: center;
     width: 100px;
-    height: auto;
+    height: 100px;
     border-style: solid;
     border-radius: 15%;
     border-color: #3882F6;
@@ -199,7 +224,7 @@ ul {
     display: flex;
     background-color: #E5E7EB;
     flex: auto;
-    height: 65px;
+    padding: 0 52px;
     justify-content: center;
     align-content: center;
 }
@@ -208,14 +233,12 @@ ul {
     align-self: center;
     font-size: 36px;
     font-style: italic;
-    color: #1F2937;
+    text-align: center;
 }
 
 .bottom-sign-up-box {
     display: flex;
-    height: 100px;
-    width: 1000px;
-    flex: auto;
+    flex: 1;
     padding: 0 52px;
     justify-content: center;
     align-items: center;
@@ -229,7 +252,7 @@ ul {
     border-radius: 5px;
     border-color: white;
     display: flex;
-    flex: auto;
+    flex: 1;
     justify-content: space-around;
     align-items: center;
     margin-bottom: 10px;
@@ -260,7 +283,9 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 25px;
+    min-width: 0;
+    height: 50px;
+    width: 100px;
     border-style: solid;
     border-radius: 5px;
     border-width: 1px;
@@ -279,13 +304,7 @@ ul {
 
 
 
-/* <><><><><><> End of Styling for Main <><><><><><> */
 
-
-
-
-
-/* <><><><><><> Start of Styling for Footer <><><><><><> */
 
 
 
@@ -294,14 +313,10 @@ footer {
     flex-direction: column;
     background-color: #1F2937;
     color: #F9FAF8;
-    flex: auto;
+    flex: 1 1 5%;
     justify-content: center;
     align-items: center;
     margin-top: auto;
-    height: 50px;
 }
 
-
-
-/* <><><><><><> End of Styling for Footer <><><><><><> */
-
+*/
