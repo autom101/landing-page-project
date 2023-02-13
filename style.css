@@ -14,7 +14,7 @@ body {
 
 header {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     background-color: #1F2937;
     height: 5%;
@@ -56,6 +56,27 @@ main {
     justify-content: space-around;
     align-items: center;
     height: 30%;
+    background-color: #1F2937;
+    gap: 300px;
+    padding: 0 100px;
+}
+
+.title-and-info {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.page-title {
+    font-size: 48px;
+    font-weight: 1000;
+    color: #F9FAF8;
+}
+
+.page-title-subtext {
+    font-size: 18px;
+    color: #E5E7EB;
 }
 
 img {
@@ -68,6 +89,7 @@ img {
     font-size: 36px;
     font-weight: 800;
     color: #1F2937;
+    padding-top: 20px;
 
     display: flex;
     justify-content: center;
