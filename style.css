@@ -104,8 +104,22 @@ img {
     padding: 0 150px;
 }
 
-.picture {
+.frame {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
 
+.picture {
+    height: 150px;
+    width: 150px;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: #3882F6;
+    border-width: 2px;
 }
 
 .testimonial-box {
