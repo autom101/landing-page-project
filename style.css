@@ -48,7 +48,7 @@ main {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    height: 88%;
+    height: 90%;
 }
 
 .content-after-header {
@@ -95,6 +95,7 @@ img {
     font-weight: 800;
     color: #1F2937;
     padding-top: 20px;
+    padding-bottom: 10px;
 
     display: flex;
     justify-content: center;
@@ -119,8 +120,8 @@ img {
 }
 
 .picture {
-    height: 150px;
-    width: 150px;
+    height: 120px;
+    width: 120px;
     border-radius: 20px;
     border-style: solid;
     border-color: #3882F6;
